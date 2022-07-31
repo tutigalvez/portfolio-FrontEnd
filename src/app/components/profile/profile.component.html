@@ -1,0 +1,27 @@
+<app-banner [url]="persona.coverurl"></app-banner>
+<div class="d-flex">
+    <div class="card-deck all-card w-100" id="first-card">
+
+        <div class="info">
+            <div class="info-img">
+                <div class="d-flex justify-content-end">
+                    <app-editbutton id="fantasma" *ngIf="login" (click)="abrirModal(persona.idpersona)" class="me-2">
+                    </app-editbutton>
+                </div>
+                <img [src]="persona.fotourl" id="profile-img" alt="Foto de perfil de {{persona.nombre}}">
+            </div>
+            <div class="info-text ">
+                <h2 class="card-title">{{persona.nombre}} {{persona.apellido}}</h2>
+                <p class="card-text">{{persona.titulo}}</p>
+                <div id="info-contact" class="localidad grey">{{persona.ubicacion}}</div>
+                <span class="localidad" id="contacto"><a href="#">{{labelForContactLink}}</a></span>
+            </div>
+            <div class="info-btns">
+
+                <button *ngIf="login" class="btn btn-primary" type="button"> ✏️</button>
+
+            </div>
+        </div>
+    </div>
+    <app-about></app-about>
+</div>

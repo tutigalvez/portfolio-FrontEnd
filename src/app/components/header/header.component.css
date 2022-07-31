@@ -1,0 +1,29 @@
+header#mainHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    background: rgba(71, 70, 70, 0.55);
+    flex-flow:row nowrap;
+    border-radius:15px;
+    height: 80px;
+    align-items: center;
+    margin: 10px;
+    position:sticky;
+    top:0;
+    z-index: 1;
+
+}
+
+.inHeader > img{
+    height: 2rem; 
+}
+a{
+    color: white;
+    font-size: 1rem;
+}
+.inNav{
+    display:flex;
+    justify-content: flex-end;
+}

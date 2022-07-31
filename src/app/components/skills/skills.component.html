@@ -1,0 +1,26 @@
+   
+<div class="row" >
+    <h1 style="text-align: center;">HABILIDADES DURAS Y BLANDAS</h1>
+  
+      <div *ngFor="let item of skill" class="col-3"  >
+        <div class=" d-flex justify-content-center" >
+            <circle-progress 
+              [percent]="item.dominio"
+              [radius]="100"
+              [subtitle]="item.titulo"
+              [subtitleColor]="'#000000'"
+              [outerStrokeWidth]="16"
+              [innerStrokeWidth]="8"
+              [outerStrokeColor]="'rgb(162, 42, 209)'"
+              [innerStrokeColor]="'rgb(240, 219, 248)'"
+              [animation]="true"
+              [animationDuration]="600"
+              [lazy]="true"
+            
+            ></circle-progress>
+          <app-editbutton *ngIf="login" (click)="abrirModal(item.idskill)" class="d-flex align-items-center"></app-editbutton>
+        </div>   
+      </div>
+  </div>
+  <br>
+  <br>

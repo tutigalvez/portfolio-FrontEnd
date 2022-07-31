@@ -1,0 +1,15 @@
+.row{
+    background-image: url("https://i.imgur.com/d6sho21.jpg");
+    background-size: cover;
+  
+    
+}
+footer{
+    color: #1f1c1c;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 2px -2px 5px #999 ;
+    padding-bottom: 30px;
+}
